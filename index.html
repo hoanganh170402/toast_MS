@@ -8,30 +8,15 @@
       <title>Toast Ms</title>
 </head>
 <body>
-      <div id="toast">
-            <!-- Success -->
-            <div class="toast toast--success">
-                  <div class="toast__icon">
-                        <i class="fa-solid fa-circle-check"></i>
-                  </div>
-                  <div class="toast__body">
-                        <div class="toast__title">Success</div>
-                        <div class="toast__msg">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        </div>
-                  </div>
-                  <div class="toast__close">
-                        <i class="fa-solid fa-xmark"></i>
-                  </div>
-            </div>
-      </div>
+      <div id="toast"></div>
 
-      <div class="">
-            <div class="btn btn--success"> Success</div>
-            <div class="btn btn--danger"> Error</div>
-            <div class="btn btn--info"> info</div>
-            <div class="btn btn--warn"> warning</div>
-            
+      <div>
+            <div onclick="showSuccessToast()" class="btn btn--success"> Success</div>
+            <div onclick="showDangerToast()" class="btn btn--danger"> Error</div>
+            <div onclick="showInfoToast()" class="btn btn--info"> info</div>
+            <div onclick="showWarningToast()" class="btn btn--warn"> warning</div>
       </div>
 </body>
+
+<script src="./main.js"></script>
 </html>
