@@ -86,12 +86,15 @@ body
       border-radius: 4px;
       border-left: 4px solid;
       box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.08);
+      background-color: #fff;
       min-width: 400px;
       max-width: 480px;
-      animation: slideInLeft 0.3s ease, 
-      slideOutLeft 0.3s ease 3s forwards; 
+      /* animation: slideInLeft 0.3s ease, slideOutLeft 0.3s ease 3s forwards; */
       /* 3s ở ây là delay lại 3s rồi mới chạy animation, forwards  lưu lại thực hiện chuyển động cuối cùng ( trong trường hợp này là cho cái toast này biến mất )   */
+      z-index: 99999999;
+      transition: all 0.2s linear;
 }
+
 
 @keyframes slideInLeft {
       from{
